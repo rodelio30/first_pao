@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'homepage/index'
 
-  root 'homepage#index'
-  # For details on the DSL available within this file, 
-   # https://guides.rubyonrails.org/routing.html
+  # root 'homepage#index'
+  root to: 'welcome#show'
 end
